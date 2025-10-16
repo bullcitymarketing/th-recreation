@@ -1,0 +1,120 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 /* assets/css/styles.css */\
+:root \{\
+  --color-primary: #1A3456;\
+  --color-accent: #33BFA1;\
+  --color-text: #1A1A1A;\
+  --color-bg: #ffffff;\
+  --color-surface: #F7F9FC;\
+  --border-radius: 8px;\
+\}\
+\
+*,\
+*::before,\
+*::after \{ box-sizing: border-box; \}\
+\
+body \{\
+  font-family: 'Inter', Arial, sans-serif;\
+  color: var(--color-text);\
+  background: var(--color-bg);\
+  margin: 0;\
+\}\
+\
+a \{ color: var(--color-primary); text-decoration: none; \}\
+a:hover \{ text-decoration: underline; \}\
+img \{ max-width: 100%; display: block; \}\
+\
+.container \{\
+  max-width: 1200px;\
+  margin: 0 auto;\
+  padding: 0 24px;\
+\}\
+\
+.header \{ background: var(--color-bg); box-shadow: 0 2px 8px rgba(0,0,0,0.04); \}\
+.header__container \{ display: flex; align-items: center; justify-content: space-between; padding: 24px 0; \}\
+\
+.logo img \{ height: 48px; \}\
+\
+.nav \{ display: flex; gap: 24px; \}\
+.nav__link \{ font-weight: 500; \}\
+\
+.btn \{\
+  display: inline-block;\
+  padding: 12px 28px;\
+  border-radius: var(--border-radius);\
+  font-size: 1em;\
+  font-weight: 600;\
+  text-align: center;\
+  transition: background .18s, color .18s;\
+  border: none;\
+  cursor: pointer;\
+\}\
+\
+.btn--primary \{\
+  background: var(--color-primary);\
+  color: #fff;\
+  border: none;\
+\}\
+\
+.btn--primary:hover \{ background: var(--color-accent); \}\
+\
+.btn--outline \{\
+  background: none;\
+  color: var(--color-primary);\
+  border: 2px solid var(--color-primary);\
+\}\
+.btn--outline:hover \{ background: var(--color-primary); color: #fff; \}\
+\
+.section \{padding: 96px 0;\}\
+.section--alt \{ background: var(--color-surface); \}\
+.grid \{ display: grid; gap: 32px; \}\
+.grid--2 \{ grid-template-columns: 1fr 1fr; \}\
+.grid--3 \{ grid-template-columns: repeat(3, 1fr); \}\
+.grid--6 \{ grid-template-columns: repeat(6, 1fr); \}\
+.card \{\
+  background: var(--color-bg);\
+  border-radius: var(--border-radius);\
+  padding: 32px;\
+  box-shadow: 0 3px 12px rgba(0,0,0,0.05);\
+  text-align: center;\
+\}\
+\
+.card--feature img \{ margin-bottom: 16px; \}\
+.step img \{ margin-bottom: 16px; \}\
+\
+.footer \{\
+  background: var(--color-primary);\
+  color: #fff;\
+  padding: 48px 0;\
+\}\
+.footer__container \{ display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 48px;\}\
+.footer a \{ color: #fff; margin: 0 4px; \}\
+.footer__form input,\
+.footer__form textarea \{\
+  display: block;\
+  width: 100%;\
+  margin-bottom: 12px;\
+  padding: 10px;\
+  border-radius: var(--border-radius);\
+  border: none;\
+\}\
+.footer__form button \{ margin-top: 8px; \}\
+\
+@media (max-width: 900px) \{\
+  .grid--2, .grid--3, .grid--6 \{ grid-template-columns: 1fr; \}\
+  .section \{padding: 48px 0;\}\
+  .header__container, .footer__container \{ flex-direction: column; gap: 24px;\}\
+\}\
+\
+@media (max-width: 600px) \{\
+  .container \{ padding: 0 12px; \}\
+  .section \{padding: 24px 0;\}\
+  .btn \{ padding: 10px 18px; font-size: 0.94em; \}\
+\}\
+}
